@@ -1,8 +1,4 @@
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+
 eureka:
   client:
     service-url:
@@ -11,5 +7,3 @@ eureka:
     register-with-eureka: 'true'
   instance:
     instance-id: ${spring.application.name}:${random.value}
-server:
-  port: '8889'
